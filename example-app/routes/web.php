@@ -24,7 +24,7 @@ use resources\views\test;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.layout');
 });
 
 //day1
@@ -101,4 +101,8 @@ Route::get('/task13', function(){
 
 Route::get('/dashboard', function(){
     return view('dashboard');
+});
+
+Route::get('/', function(){
+    return view('content');
 });
